@@ -3,14 +3,18 @@ using System.Configuration;
 namespace Login3
 
 {
-    public partial class Form1 : Form
+    public partial class FormularioLogin : Form
     {
-        public Form1()
+        public FormularioLogin()
         {
             InitializeComponent();
         }
+
+        
+
         public void logins()
         {
+            
             try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
@@ -24,7 +28,9 @@ namespace Login3
 
                         if (dr.Read())
                         {
-                            MessageBox.Show("Acceso completado");
+
+                         
+
                         }
                         else
                         {
@@ -53,5 +59,12 @@ namespace Login3
         {
             logins();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        } 
+
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Login3
 {
-    partial class Form1
+    partial class FormularioLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -54,6 +54,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 450);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnIniciar
             // 
@@ -123,7 +124,7 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // FormularioLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,7 +132,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "FormularioLogin";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
